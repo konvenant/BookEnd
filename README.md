@@ -1,6 +1,4 @@
-Absolutely! Here's the updated README incorporating the testing instructions:
-
-## README for Book Management API
+## Book Management API
 
 **Project:** Book Management API
 
