@@ -6,7 +6,7 @@ import {Book} from '../src/models/book';
 const request = supertest(app)
 // Connect to a separate test database
 beforeAll(async () => {
-  await mongoose.connect('mongodb+srv://user:1234@cluster0.hhbqifi.mongodb.net/BookendDB', {
+  await mongoose.connect(`${process.env.MONGODB_URL}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
